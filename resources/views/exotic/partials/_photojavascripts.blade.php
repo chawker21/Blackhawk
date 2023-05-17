@@ -1,0 +1,1 @@
+<script src="{{asset('js/photojs.js')}}" type="text/javascript"></script>

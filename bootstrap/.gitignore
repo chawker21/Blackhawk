@@ -1,0 +1,12 @@
+# Laravel specific
+/vendor/
+/node_modules/
+/storage/
+/public/storage
+.env
+
+# PhpStorm specific
+.idea/
+*.iml
+*.ipr
+*.iws
