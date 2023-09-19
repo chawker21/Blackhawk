@@ -8,7 +8,7 @@ class CSIS1550Controller extends Controller
 {
 
     public function index() {
-        $colonial = colonial::where('CUSTOMER_NUM','=');
+        //$colonial = colonial::where('CUSTOMER_NUM','=');
 
         return view('CSIS1550/index');
 

@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- Page Title -->
     <title>{{ config('app.name', 'Chawker21.blue') }}</title>
 
-    <!-- Scripts -->
-
-    <!-- Fonts -->
-
     <!-- Styles -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="[Check latest integrity]" crossorigin="anonymous">
+    <!-- Theme specific CSS -->
     <link href="{{ asset('/app_resources/css/themes/costa_theme.css') }}" rel="stylesheet">
-    {{--<link href="{{asset('/app_resources/css/mycss.css')}}" rel="stylesheet" type="text/css">--}}
+    <!-- Primary CSS (Base styles for the application) -->
     <link href="{{asset('/app_resources/css/primary.css')}}" rel="stylesheet" type="text/css">
+    <!-- Button Component Styles -->
     <link href="{{ asset('/app_resources/css/components/mybtn.css') }}" rel="stylesheet">
-
 </head>
 
 <body>
+<!-- Navigation bar (Uncomment when necessary) -->
 {{--@include('app.layouts.navbars._main_nav')--}}
-        <main>
-            <div>
-                @yield('content')
-            </div>
-            <!-- Scripts -->
-            <!-- footer used for React, empty file -->
-            @include('app.partials._javascript')
-            @include('app.partials._bootstrap_modal')
-        </main>
+
+<!-- Main Content Container -->
+<main>
+    <div>
+        @yield('content')
+    </div>
+
+    <!-- Additional scripts -->
+    @include('app.partials._javascript')
+
+    <!-- Modals for the application -->
+    @include('app.partials._bootstrap_modal')
+</main>
 </body>
+
 </html>
+

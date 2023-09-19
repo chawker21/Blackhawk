@@ -92,5 +92,5 @@ class ApiController extends Controller
 
 
     //https://maps.googleapis.com/maps/api/geocode/json?address=
-    //api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid=f5b5de1c7c9e635727203d95b2b7e193
+
 }

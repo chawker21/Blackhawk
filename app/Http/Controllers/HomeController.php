@@ -37,8 +37,8 @@ class HomeController extends Controller
     {
 
 
-        shell_exec("C:\Users\chris\PycharmProjects\My_Scripts\Blackhawk\Scripts\python C:\wamp\www\BlackhawkBlog\public\app_resources\python\main.py 2>&1");
-        return redirect()->back();
+        //shell_exec("C:\Users\chris\PycharmProjects\My_Scripts\Blackhawk\Scripts\python C:\wamp\www\BlackhawkBlog\public\app_resources\python\main.py 2>&1");
+        return view('new');
 
 
     }

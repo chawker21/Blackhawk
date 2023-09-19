@@ -19,7 +19,7 @@
     <link href="{{ asset('/app_resources/css/themes/costa_theme.css') }}" rel="stylesheet">
     {{--<link href="{{asset('/app_resources/css/mycss.css')}}" rel="stylesheet" type="text/css">--}}
     <link href="{{asset('/app_resources/css/primary.css')}}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/app_resources/css/components/mybtn.css') }}" rel="stylesheet">
+    <link href="{{ asset('/app_resources/css/components/mybtn.css') }}?v={{ time() }}" rel="stylesheet">
     <link href="{{ asset('/app_resources/css/themes/vibrantcolor_theme.css') }}" rel="stylesheet">
 
 </head>
